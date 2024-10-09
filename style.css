@@ -77,6 +77,9 @@ header nav{
     height: 7.5%;
     border: 1px solid #fff;
     margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
 
 }
 /**/
@@ -84,9 +87,27 @@ header nav .brand{
     width: 20%;
     height: 100%;
     color: #fff;
+    /*border: 1px solid #fff;*/
+
+    color: #fff;
+    
     font-family: "Poppins" , sans-serif;
+
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
 
+}
+header nav ul{
+    width: 60%;
+    height: 100%;
+    border: 1px solid #fff;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+header nav ul li{
+    list-style-type: none;
+    padding: 3px 10px;
 }
