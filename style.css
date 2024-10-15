@@ -1,113 +1,203 @@
-
-/**/
-*{
-    margin: 0px;
-    padding: 0px;
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-/* */
+
+/* Body styles */
 body {
     background: #000;
     color: #fff;
-    
-}
-/* */
-.header{
-    width: 100%;
+    margin: 0;
+    padding: 0;
     height: 100vh;
-   background: #131414;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
-
 }
-/* header adjust full top box*/ 
 
-header{
+/* Header styles */
+header {
     position: relative;
-    align-items: center;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 500px;
     border: 4px solid gray;
     border-radius: 20px;
-
-     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* slash and dot symbol in the header */
-
-header .mic_dot {
-    position: absolute;
-width: 100px;
-height: 15px;
-background: gray;
-left: 47%;
-top: 5%;
-
-border-radius: 0px 0px 10px 10px;
-display: flex;
-align-items: center;
-justify-content: center;
-
-}
-
-/* */
-header .mic_dot .mic{
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    border-radius: 50px;
-margin-right: 10px;
-margin-bottom: 1px;
-}
-/* */
-header .mic_dot .dot{
-    width: 4px;
-    height: 4px;
-    background: #fff;
-    border-radius: 50%;
-    margin-bottom: 1px;
-
-}
-/**/
-header nav{
-    width: 90%;
+/* Navigation styles */
+header nav {
+    width: 95%;
     height: 7.5%;
-    border: 1px solid #fff;
     margin: auto;
-display: flex;
-align-items: center;
-justify-content: space-between;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-/**/
-header nav .brand{
-    width: 20%;
-    height: 100%;
-    color: #fff;
-    /*border: 1px solid #fff;*/
 
-    color: #fff;
-    
-    font-family: "Poppins" , sans-serif;
-
+header nav .brand {
+    color: chartreuse;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-
+    font-size: 50px;
+    margin-top: 15px;
 }
-header nav ul{
+
+header nav ul {
     width: 60%;
-    height: 100%;
-    border: 1px solid #fff;
-    align-items: flex-end;
+    display: flex;
     justify-content: center;
-
+    align-items: flex-end;
 }
 
-header nav ul li{
+header nav ul li {
     list-style-type: none;
     padding: 3px 10px;
 }
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+header nav ul li a:hover {
+    color: gray;
+}
+
+header nav .search {
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+header nav .search input {
+    width: 90%;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/* Section styles for the card */
+header section {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0; /* Aligns the card to the left */
+    border: none;
+    margin-top: 10px;
+    
+}
+
+header .content {
+    width: 100%;
+    padding-left: 20px; /* Adjust left padding to move closer to the edge */
+    border: 2px solid #fff; /* Adds a border for the movie card effect */
+    border-radius: 10px; /* Rounded corners for a card effect */
+    background-color: #131414; /* Dark background for movie card */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); /* Adds shadow for depth */
+    padding: 20px;
+    margin: 0;
+    background-image: url(c1.jpg);
+    background-image: fill space;
+    
+    
+}
+
+header section .content h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header section .content h1 span {
+    background: red;
+    padding: 0px 15px;
+    color: #fff;
+}
+
+header section .content h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+header section .content .subtitles{
+color: #ccc !important;
+font-size: 15px !important;
+font: 'system-ui'!important;
+padding: 0px 3px ;
+margin-top: 10px !important;
+    
+}
+header section .content .rating{
+margin-top: 10px !important;
+    
+}
+
+/* Additional card section (if needed) */
+header .cards {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    
+}
+header .cards ::-webkit-scrollbar {
+    display: none;
+}
+
+header .card{
+    background-color: #222;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 30%;
+    margin-right: 20px;
+    box-shadow: 0px 4px 10px rgba(255,255,255,0.1);
+    text-align: center;
+    overflow-x: hidden;
+    flex-shrink: 0;
+}
+
+
+header .card img{
+width: 100%;
+height: auto;
+
+}
+
+header .card .card-body{
+padding: 15px;
+
+}
+
+header .card .card-body h3 {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+header .card  .card-body p {
+
+    font-size: 14px;
+color: #ccc;
+}
+
+/* Smaller screen scrolling */
+
+@media (max-width: 768px){
+header .cards{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+}
+}
+
