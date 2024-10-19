@@ -1,203 +1,301 @@
-/* General reset */
-* {
+*{
     margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-
-/* Body styles */
-body {
-    background: #000;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-}
-
-/* Header styles */
-header {
-    position: relative;
+  }
+  
+  body {
+    font-family: 'system-ui', sans-serif;
+  }
+  
+  .navbar {
     width: 100%;
-    height: 500px;
-    border: 4px solid gray;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Navigation styles */
-header nav {
-    width: 95%;
-    height: 7.5%;
-    margin: auto;
+    height: 50px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+  }
+  
+  .navbar-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: "Sen", sans-serif;
+  }
+  
+  .logo-container {
+    flex: 1;
+  }
+  
+  .logo {
+    font-size: 30px;
+    color: red;
+  }
+  
+  .menu-container {
+    flex: 6;
+  }
+  .signinbutton{
 
-header nav .brand {
-    color: chartreuse;
-    font-family: 'Poppins', sans-serif;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    font-size: 50px;
-    margin-top: 15px;
-}
-
-header nav ul {
-    width: 60%;
+    list-style: none;
+    margin-left: 80%;
+  }
+  .menu-list {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-header nav ul li {
-    list-style-type: none;
-    padding: 3px 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    list-style: none;
+  }
+  
+  .menu-list-item {
+    margin-right: 30px;
+  }
+  
+  .menu-list-item.active {
     font-weight: bold;
-    transition: all 0.3s ease-in-out;
-    margin-top: 20px;
-}
-
-header nav ul li a:hover {
-    color: gray;
-}
-
-header nav .search {
-    width: 20%;
+  }
+  .profile-container {
+    flex: 2;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
-}
+  }
+  
+  .profile-text-container {
+    margin: 0 20px;
+  }
+  
+  .profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .toggle {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  
+  .toggle-icon {
+    color: goldenrod;
+  }
+  
+  .toggle-ball {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease all;
+  }
+  
 
-header nav .search input {
-    width: 90%;
-    padding: 5px 15px;
-    border-radius: 20px;
+  
+  .left-menu-icon {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .container {
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+  }
+  
+  .content-container {
+    margin-left: 50px;
+  }
+  
+  .featured-content {
+    height: 50vh;
+    padding: 50px;
+    background-image: url(home3\ -\ Copy.jpg);
+  }
+  
+  .featured-title {
+    width: 200px;
+  }
+  
+  .featured-desc {
+    width: 500px;
+    color: lightgray;
+    margin: 30px 0;
+  }
+  
+  .featured-button {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
     border: none;
     outline: none;
-}
-
-/* Section styles for the card */
-header section {
-    width: 95%;
-    height: 100%;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .movie-list-container {
+    padding: 0 20px;
+  }
+  
+  .movie-list-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .movie-list {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-left: 0; /* Aligns the card to the left */
-    border: none;
-    margin-top: 10px;
-    
-}
-
-header .content {
-    width: 100%;
-    padding-left: 20px; /* Adjust left padding to move closer to the edge */
-    border: 2px solid #fff; /* Adds a border for the movie card effect */
-    border-radius: 10px; /* Rounded corners for a card effect */
-    background-color: #131414; /* Dark background for movie card */
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); /* Adds shadow for depth */
-    padding: 20px;
-    margin: 0;
-    background-image: url(c1.jpg);
-    background-image: fill space;
-    
-    
-}
-
-header section .content h1 {
-    font-size: 40px;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+  
+  .movie-list-item {
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  .movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+  }
+  
+  .movie-list-item:hover .movie-list-item-title,
+  .movie-list-item:hover .movie-list-item-desc,
+  .movie-list-item:hover .movie-list-item-button {
+    opacity: 1;
+  }
+  
+  .movie-list-item-img {
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .movie-list-item-title {
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
     font-weight: bold;
-}
-
-header section .content h1 span {
-    background: red;
-    padding: 0px 15px;
-    color: #fff;
-}
-
-header section .content h3 {
-    margin-top: 10px;
-    font-size: 20px;
-}
-header section .content .subtitles{
-color: #ccc !important;
-font-size: 15px !important;
-font: 'system-ui'!important;
-padding: 0px 3px ;
-margin-top: 10px !important;
-    
-}
-header section .content .rating{
-margin-top: 10px !important;
-    
-}
-
-/* Additional card section (if needed) */
-header .cards {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin: 20px auto;
-    flex-wrap: wrap;
-    
-}
-header .cards ::-webkit-scrollbar {
-    display: none;
-}
-
-header .card{
-    background-color: #222;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    width: 30%;
-    margin-right: 20px;
-    box-shadow: 0px 4px 10px rgba(255,255,255,0.1);
-    text-align: center;
-    overflow-x: hidden;
-    flex-shrink: 0;
-}
-
-
-header .card img{
-width: 100%;
-height: auto;
-
-}
-
-header .card .card-body{
-padding: 15px;
-
-}
-
-header .card .card-body h3 {
-font-size: 18px;
-margin-bottom: 10px;
-}
-
-header .card  .card-body p {
-
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  
+  .movie-list-item-desc {
+    background-color: #333;
+    padding: 10px;
     font-size: 14px;
-color: #ccc;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  
+  .movie-list-item-button {
+    padding: 10px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  
+  .arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .container.active {
+    background-color: white;
+  }
+  
+  .movie-list-title.active {
+    color: black;
+  }
+  
+  .navbar-container.active {
+    background-color: white;
+  
+    color: black;
+  }
+  
+  .sidebar.active{
+      background-color: white;
+  }
+  
+  .left-menu-icon.active{
+      color: black;
+  }
+  
+  .toggle.active{
+      background-color: black;
+  }
+  
+  .toggle-ball.active{
+      background-color: white;
+      transform: translateX(-20px);
+  }
+  
+  @media only screen and (max-width: 940px){
+      .menu-container{
+          display: none;
+      }
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
-/* Smaller screen scrolling */
-
-@media (max-width: 768px){
-header .cards{
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-
-}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
