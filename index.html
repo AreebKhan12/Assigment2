@@ -3,74 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOvie Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
+<title>CineStream</title>
 </head>
-<body>
-    <header>
-        <div class="mic_dot"> 
-            <div class="mic"></div>
-            <div class="dot"></div>
 
+<script src="script.js"></script>
+
+<body>
+
+<div class="navbar">
+    <div class="navbar-container">
+        <div class="logo-container">
+            <h1 class="logo">CineStream</h1>
         </div>
-        <nav>
-                <h3 class="brand">CineStream</h3>
-                <ul>
-                    <li><a href="#">Home</a> </li>
-                    <li><a href="#">TV Shows</a> </li>
-                    <li><a href="#">Web Series</a> </li>
-                    <li><a href="#">Upcoming</a> </li>
-                    
+        <div class="menu-container">
+            <ul class="menu-list">
+                <li class="menu-list-item">Home</li>
+                <li class="menu-list-item">Movies</li>
+                <li class="menu-list-item">Series</li>
+                <li class="menu-list-item">Popular</li>
+                <li class="menu-list-item">Trends</li>
+
+            </ul>
+        </div>
+        <div class="menucontainer2">
+            <ul id="button2">
+                <ul style="list-style: none;">
+
+                <li><a href=".">SIGN UP</a></li>
                 </ul>
-                <div class="search">
-                    <input type="text" placeholder="Search..">
-                </div>
-        </nav>
-        <!-- dection start -->
-        <section>
-            <div class="content">
-                <h1>MONEY <span>HEIST</span></h1>
-                <h3>Season 5</h3>
-                <div class="rating">
-                    <i class="bi bi-star-fill">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                </i></div>
-                <div class="subtitles">
-                    Action <span>/</span> Drama <span>/</span> 
-                    Thriller <span></span> 
-                </div>
+            </ul>
+        </div>
+        <div class="menucontainer">
+            <ul id="button">
+                <ul style="list-style: none;"><li><a href=".">SIGN IN</a></li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="profile-container">
+            <img class="profile-picture" src="blank-profile-picture-973460_960_720.webp" alt="">
+            <div class="profile-text-container">
+                <span class="profile-text">Profile</span>
+                <i class="fas fa-caret-down"></i>
             </div>
-        </section>
-        <div class="cards">
-            <div class="card">
-                <img src="" alt="Movie 1">
-                <div class="card-body">
-                    <h3>The Martians</h3>
-                    <p>Some description.</p>
+            
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="content-container">
+        <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images.jpeg');">
+            <img class="featured-title" src="spider-man-no-way-home-title-art-zbi4tyuhz5n2hv68_processed.jpg" alt="...">
+
+            
+            <p class="featured-desc">Action / Thriller / Fiction <br> <br> With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero.
+            </p>
+            <div class="rating"><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i></div>
+
+            <button class="featured-button">WATCH</button>
+        </div>
+
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">NEW RELEASES</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="c1.jpg" alt="">
+                        <span class="movie-list-item-title">Quantamania</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="c2.jpg" alt="">
+                        <span class="movie-list-item-title">The Flash</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="c3.jpg" alt="">
+                        <span class="movie-list-item-title">Guardians of the <br> Galaxy</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="c6.jpg" alt="">
+                        <span class="movie-list-item-title">John Wick 3</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                        <span class="movie-list-item-title">Avengers</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/6.jpg" alt="">
+                        <span class="movie-list-item-title">Kong</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                        <span class="movie-list-item-title">Gladiator</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="" alt="Movie 2">
-                <div class="card-body">
-                    <!-- <h3>Movie Title 2</h3>
-                    <p>Some description about the movie.</p> -->
-                </div>
-            </div>
-            <div class="card">
-                <img src="movie3.jpg" alt="Movie 3">
-                <div class="card-body">
-                    <h3>Movie Title 3</h3>
-                    <p>Some description about the movie.</p>
-                </div>
+                <i class="fas fa-chevron-right arrow"></i>
             </div>
         </div>
         
-    </header>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 CineWave. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+
 </body>
+
 </html>
