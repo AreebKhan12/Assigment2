@@ -37,16 +37,23 @@
     list-style: none;
   }
 
-  .menucontainer{
+.menucontainer2{
 flex: 6;
-margin-left: 300px;
+margin-left: 135px;
 list-style: none;
 
+}
+
+  .menucontainer{
+flex: 6;
+margin-left: 0%;
+list-style: none;
   }
 
   button{
 
     list-style-type: none;
+    
   }
   .signinbutton{
 
