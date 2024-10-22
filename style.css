@@ -34,12 +34,25 @@
   
   .menu-container {
     flex: 6;
+    list-style: none;
+  }
+
+  .menucontainer{
+flex: 6;
+margin-left: 300px;
+list-style: none;
+
+  }
+
+  button{
+
+    list-style-type: none;
   }
   .signinbutton{
 
     display: flex;
     list-style: none;
-    margin-left: 80%;
+    margin-left: 100%;
   }
   .menu-list {
     display: flex;
